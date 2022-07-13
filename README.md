@@ -11,4 +11,4 @@ Purifier, a powerful and fast way to clean all your tokens. You'll save a lot of
 - Discord Server: discord.gg/hcaptcha
 - Telegram: @notspeezy
 # Preview 
-![alt_text](https://i.ibb.co/nbDPZRw/region-call-raper.gif)
+![alt_text](https://iili.io/wVW4P1.gif)
