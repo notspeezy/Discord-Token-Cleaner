@@ -15,7 +15,7 @@ purifier_art = f"""{Fore.YELLOW}
 
 class Cleaner:
     def __init__(self):
-        self.proxy = None if os.path.getsize == 0 else f"http://{next(proxies)}"
+        self.proxy = None if os.path.getsize("data/proxies.txt") == 0 else f"http://{next(proxies)}"
         self.session = httpx.Client(proxies=self.proxy)
         self.threads = []
         self.cleaned = []
