@@ -6,6 +6,12 @@ Purifier, a powerful and fast way to clean all your tokens. You'll save a lot of
 - Provide your proxies [ip:port][user:pass@ip:port] (optional)
 - Run main.py
 - The program will start purifying (cleaning) your tokens
+# Todo
+- [x] Leave or delete guilds
+- [x] Close DMs
+- [x] Remove relations or pending requests
+- [ ] Remove bio/status
+- [ ] Remove avatar
 # Contact
 - Discord: sp#5084
 - Discord Server: discord.gg/hcaptcha
