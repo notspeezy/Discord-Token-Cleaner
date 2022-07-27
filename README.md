@@ -1,22 +1,22 @@
 # Discord-Token-Cleaner
 Purifier, a powerful and fast way to clean all your tokens. You'll save a lot of money using this cleaner, enjoy ‎😃
-# How It Works?
+## How It Works?
 - Install required modules from "requirements.txt"
 - Provide your tokens to clean in data/tokens.txt
 - Provide your proxies (optional)
 - Run main.py
 - The program will start purifying (cleaning) your tokens
-# Todo
-- [x] Proxy supported [ip:port][user:pass@ip:port] HTTP/s
+## Todo
+- [x] Proxy supported HTTP/s [ip:port][user:pass@ip:port] formats
 - [x] Token formats supported [mail:pass:token][token]
-- [x] Leave or delete guilds
+- [x] Leave and delete guilds
 - [x] Close DMs
-- [x] Remove relations or pending requests
+- [x] Remove relations and pending requests
 - [x] Remove bio/status
 - [ ] Remove avatar
-# Contact
+## Contact
 - Discord: sp#5084
 - Discord Server: discord.gg/hcaptcha
 - Telegram: @notspeezy
-# Preview 
-![alt_text](https://iili.io/wVW4P1.gif)
+## Preview
+![unknown](https://user-images.githubusercontent.com/93849730/181318654-350552ad-c330-4b3a-980b-e10b1d59a0e5.png)
