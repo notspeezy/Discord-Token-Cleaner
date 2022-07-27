@@ -12,7 +12,7 @@ Purifier, a powerful and fast way to clean all your tokens. You'll save a lot of
 - [x] Leave or delete guilds
 - [x] Close DMs
 - [x] Remove relations or pending requests
-- [ ] Remove bio/status
+- [x] Remove bio/status
 - [ ] Remove avatar
 # Contact
 - Discord: sp#5084
