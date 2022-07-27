@@ -1,5 +1,4 @@
 import os
-import sys
 import time
 import httpx
 import requests
@@ -7,7 +6,7 @@ import requests
 from itertools import cycle
 from colorama import Fore; from concurrent.futures import ThreadPoolExecutor
     
-os.system("clear") if sys.platform == "linux" else os.system("cls")
+os.system("cls") if os.name == "nt" else os.system("clear")
 __tokens__, __proxy__, __threads__ = open("input/tokens.txt", "r").read().splitlines(), cycle(open("input/proxies.txt", "r").read().splitlines()), 10
 
 purifier_art = f"""{Fore.YELLOW}
