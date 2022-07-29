@@ -3,8 +3,9 @@ import time
 import httpx
 import requests
 
+from colorama import Fore
 from itertools import cycle
-from colorama import Fore; from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
     
 os.system("cls") if os.name == "nt" else os.system("clear")
 __tokens__, __proxy__, __threads__ = open("input/tokens.txt", "r").read().splitlines(), cycle(open("input/proxies.txt", "r").read().splitlines()), 10
@@ -47,7 +48,7 @@ class Cleaner:
         
     def guildcleaner(self, token: str):
         guilds = self.session.get("https://discord.com/api/v9/users/@me/guilds", headers={"Authorization": token}).json()
-        tk = token[:32] + "*" * 5
+        tk = token[:32] + "\x1b[0m*" * 5
         if len(guilds) > 0:
             for guild in guilds:
                 headerz = {
@@ -100,7 +101,7 @@ class Cleaner:
     
     def dmcleaner(self, token: str):
         channels = self.session.get("https://discord.com/api/v9/users/@me/channels", headers={"Authorization": token}).json()
-        tk = token[:32] + "*" * 5
+        tk = token[:32] + "\x1b[0m*" * 5
         if len(channels) > 0:
             for channel in channels:
                 headerz = {
@@ -147,7 +148,7 @@ class Cleaner:
         
     def friendcleaner(self, token: str):
         friends = self.session.get("https://discord.com/api/v9/users/@me/relationships", headers={"Authorization": token}).json()
-        tk = token[:32] + "*" * 5
+        tk = token[:32] + "\x1b[0m*" * 5
         if len(friends) > 0:
             for friend in friends:
                 headerz = {
@@ -193,7 +194,7 @@ class Cleaner:
     
     def biocleaner(self, token: str):
         bio = self.session.get("https://discord.com/api/v9/users/@me", headers={"Authorization": token}).json()
-        tk = token[:32] + "*" * 5
+        tk = token[:32] + "\x1b[0m*" * 5
         if len(bio['bio']) > 0:
             headerz = {
                 "Authority": "discord.com",
@@ -238,7 +239,7 @@ class Cleaner:
             
 
     def statuscleaner(self, token: str):
-        tk = token[:32] + "*" * 5
+        tk = token[:32] + "\x1b[0m*" * 5
         headerz = {
             "Authority": "discord.com",
             "Method": "PATCH",
